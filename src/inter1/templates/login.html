@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styel.css' %}">
+</head>
+<body>
+    <section id="login">
+        <section class="wrapper">
+            <div class="container">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="logo">
+                        <img src="{% static 'images/logo.png' %}" alt="logo" />
+                    </div>
+                    <h1>Login Now</h1>
+                    <div class="form-control" >
+                        <input type="text" name="username" id="" placeholder="Enter username">
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="password" id="" placeholder="Enter password">
+                    </div>
+                    <p>Don't have an account? <a href="{% url 'product:register' %}">Register</a></p>
+                    <div class="btn">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                {% if error %}
+                <p class="message">{{message}}</p>
+                {% endif %}
+            </div>
+        </section>
+    </section>
+</body>
+</html>
+
+    

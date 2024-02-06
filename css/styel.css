@@ -1,0 +1,152 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+#header{
+    height: 80px;
+    
+}
+#header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+#header .wrapper h1{
+    background-color: green;
+   
+    padding: 8px 16px;
+}
+#header .wrapper h1 a{
+    color: #fff;
+}
+#header .wrapper ul{
+    display: flex;
+
+}
+#header .wrapper ul li{
+    margin-right: 12px;
+}
+#header .wrapper ul li a{
+    color:black;
+}
+#header .wrapper ul li .btn{
+    background-color: green;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    
+}
+#home{
+    height: 80px;
+    background-color: #ddd;
+
+}
+#home .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+#home .wrapper h2{
+    font-weight: 800;
+}
+#home .wrapper ul{
+    display: flex;
+}
+#home .wrapper ul li{
+    margin-right: 10px;
+
+}
+#home .wrapper ul li a{
+    color: black;
+}
+#spotlight .wrapper h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+#spotlight .wrapper h2 a{
+    background-color: blue;
+    padding:  10px 20px;
+    color: #fff;
+}
+
+#login{}
+
+#login .wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .wrapper div.container{
+    width: 50%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border: 1px solid #f1f1f1;
+    padding: 24px;
+}
+
+#login .wrapper div.container form{}
+
+#login .wrapper div.container form div.logo{
+    width: 180px;
+    margin: 0 auto;
+}
+
+#login .wrapper div.container form div.logo img{
+    width: 100%;
+    display: block;
+}
+
+#login .wrapper div.container form h1{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#login .wrapper div.container form div.form-control{
+    margin-bottom: 24px;
+    padding: 8px 16px;
+    border: 1px solid #e6e4e4;
+    border-radius: 8px;
+}
+
+#login .wrapper div.container form div.form-control input{
+    width: 100%;
+}
+
+#login .wrapper div.container form div.btn {
+    text-align: center;
+}
+
+#login .wrapper div.container form p{
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+#login .wrapper div.container form p a{
+    margin-right: 4px;
+    color: var(--red);
+    font-weight: 500;
+}
+
+#login .wrapper div.container form div.btn input{
+    padding: 8px 16px;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
